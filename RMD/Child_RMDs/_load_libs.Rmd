@@ -1,0 +1,28 @@
+---
+title: "Set Up"
+author: "Matthew Hamilton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install required packages
+
+```{r eval = FALSE}
+# install.packages("remotes")
+# remotes::install_github("ready4-dev/serious")
+```
+
+## Load library functions
+
+```{r message=FALSE, warning=FALSE}
+library(ready4)
+```
+
+<!-- We also load other third party libraries and some functions we have written but have not yet added to the "athletic" library. -->
+
+```{r echo=FALSE, eval=FALSE}
+source("../../R/functions.R")
+```

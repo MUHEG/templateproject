@@ -1,0 +1,23 @@
+---
+title: "Write wrangled"
+author: "Matthew Hamilton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+We can now save our processed microdata and time series datasets.
+
+We begin by creating the workspace into which we will save our processed datasets.
+
+```{r}
+# write_ws_fn(path_to_private_1L_chr, processed_dir_1L_chr = processed_dir_1L_chr)
+```
+
+We save a copy of our processed dataset.
+
+```{r message=FALSE}
+saveRDS(processed_ls, paste0(path_to_private_1L_chr,"/",processed_dir_1L_chr, "/R/processed_ls.RDS"))
+```
+
+

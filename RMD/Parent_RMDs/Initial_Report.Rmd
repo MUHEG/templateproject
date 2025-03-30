@@ -1,0 +1,44 @@
+---
+title: "Ingest and processing of input data"
+author: "Matthew Hamilton"
+output:
+  html_document:
+    code_folding: show
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 4
+    number_sections: true
+    theme: lumen
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+params:
+  file_names_ls: NULL
+  path_to_input_1L_chr: "."
+  path_to_private_1L_chr: NULL
+  path_to_public_1L_chr: NULL
+  raw_data_ls: NULL
+  raw_dir_1L_chr: "Raw"
+---
+
+# Set up
+
+```{r, child=c('../Child_RMDs/_load_libs.Rmd')}
+```
+
+```{r, child=c('../Child_RMDs/_specify_path_to_raw.Rmd')}
+```
+
+# Ingest raw data
+
+```{r, child=c('../Child_RMDs/_ingest_raw.Rmd')}
+```
+
+# Process data
+
+```{r, child=c('../Child_RMDs/_wrangle_data.Rmd')}
+```
+
+# Save output
+
+```{r, child=c('../Child_RMDs/_write_wrangled.Rmd')}
+```

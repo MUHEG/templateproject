@@ -1,0 +1,34 @@
+---
+title: "Specify paths"
+author: "Matthew Hamilton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Specify paths to input data files
+
+
+```{r echo=FALSE}
+path_to_input_1L_chr <- params$path_to_input_1L_chr
+```
+
+## Specify paths to output data directories
+We specify the directory in which we will save non-confidential output files suitable for public release.
+
+```{r eval=FALSE}
+path_to_public_1L_chr <- "ADD PATH HERE"
+```
+
+```{r echo=FALSE}
+path_to_public_1L_chr <- params$path_to_public_1L_chr
+```
+
+We specify a secure directory appropriate in which we will save sensitive microdata output files.
+
+```{r eval=FALSE}
+path_to_private_1L_chr <- "ADD SECURE PATH HERE"
+```
+
+```{r echo=FALSE}
+path_to_private_1L_chr <- params$path_to_private_1L_chr
+```

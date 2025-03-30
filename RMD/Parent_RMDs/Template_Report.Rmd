@@ -1,0 +1,60 @@
+---
+title: "Active transport"
+author:
+- familyname: SURNAME
+  othernames: FIRSTNAME
+  address: Monash University
+  qualifications: QUAL
+- familyname: SURNAME2
+  othernames: FIRSTNAME2
+  address: Monash University
+  qualifications: QUAL
+email: muheg@monash.edu
+phone: "(03) 9903 8962"
+department: Health Economics Group
+organization: CLIENTNAME
+bibliography: references.bib
+biblio-style: authoryear-comp
+linestretch: 1.5
+output:
+  monash::report:
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    number_sections: yes
+    citation_package: biblatex
+    toc: true
+# date: "`r format(Sys.time(), '%d %B, %Y')`"
+params:
+  models_ls: NULL
+  processed_ls: NULL
+  fabels_ls: NULL
+  path_to_private_1L_chr: NULL
+  path_to_public_1L_chr: NULL
+  raw_data_ls: NULL
+  sim_results_ls: NULL
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r message=FALSE, warning=FALSE}
+library(ready4)
+library(ready4use)
+library(youthvars)
+library(ggpubr)
+# library(specific)
+# library(serious)
+```
+
+```{r echo=FALSE, eval=FALSE}
+source("../../R/functions.R")
+```
+
+\newpage
+
+Report content goes here

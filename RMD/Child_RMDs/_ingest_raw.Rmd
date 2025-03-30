@@ -1,0 +1,17 @@
+---
+title: "Ingest"
+author: "Matthew Hamilton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r echo = FALSE}
+file_names_ls <- params$file_names_ls
+raw_dir_1L_chr <- params$raw_dir_1L_chr
+raw_data_ls <- params$raw_data_ls
+```
+
+```{r eval=is.null(raw_data_ls), message=FALSE}
+# raw_data_ls <- read_data_fn
+```
+
